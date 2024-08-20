@@ -1,0 +1,23 @@
+@import url("./Fonts.css");
+@import url("./BoxShadow.css");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+#app-container {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh 0 3vh 0;
+}
+
+#app-container > div {
+  min-width: 20%;
+}

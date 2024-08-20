@@ -1,0 +1,33 @@
+#bot-container {
+  margin-top: 10px;
+}
+
+#input-title-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#input-title-container > p {
+  padding-bottom: 5px;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#input-container input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 7px;
+  border: none;
+}
+
+.input-button {
+  padding: 7px;
+  background-color: rgb(154, 140, 250);
+  border: none;
+  color: white;
+  font-weight: 400;
+}
