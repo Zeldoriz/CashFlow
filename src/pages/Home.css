@@ -1,0 +1,18 @@
+#landing-page-container {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3vh 0 3vh 0;
+  margin-left: 15vw;
+}
+
+#landing-page-title {
+  font-weight: 500;
+  font-size: x-large;
+}
+
+#landing-page-text {
+  margin: 1em 15vw 0 0;
+}

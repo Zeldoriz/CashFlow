@@ -1,5 +1,9 @@
-@import url("./Fonts.css");
-@import url("./BoxShadow.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,400&family=Nanum+Pen+Script&family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --purple: rgb(154, 140, 250);
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -9,15 +13,10 @@ body {
   background-color: whitesmoke;
 }
 
-#app-container {
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3vh 0 3vh 0;
+.purple {
+  color: var(--purple);
 }
 
-#app-container > div {
-  min-width: 20%;
+.custom-box-shadow {
+  box-shadow: 0px 1px 2px 0.2px rgba(0, 0, 0, 0.4);
 }

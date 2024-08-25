@@ -1,0 +1,62 @@
+#purple-line {
+  background-color: var(--purple);
+  width: 75%;
+  height: 4px;
+  margin: 3px 0 10px 0;
+}
+
+#sidebar-container {
+  box-shadow: 0.5px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 13vw;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5vh 0 2.5vh 0;
+}
+
+/* Nav.Link renders <a>, apply this to remove default styling */
+#sidebar-container a {
+  text-decoration: none;
+}
+
+.sidebar-child {
+  width: 100%;
+  height: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes color-change {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: var(--purple);
+  }
+}
+
+.sidebar-child:hover {
+  box-shadow: 0px 1px 3px 0.5px rgba(0, 0, 0, 0.2), 0px -1px 3px 0.5px rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: var(--purple);
+  cursor: pointer;
+  animation-name: color-change;
+  animation-duration: 0.5s;
+}
+
+.sidebar-title p {
+  font-size: large;
+  font-weight: 500;
+}
+
+.sidebar-child p {
+  font-size: medium;
+  font-weight: 300;
+}

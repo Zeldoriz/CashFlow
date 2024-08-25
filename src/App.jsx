@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Context from "./contexts/contexts";
 import "./App.css";
-import "./Components/Top.css";
-import Top from "./Components/Top";
-import Mid from "./Components/Mid";
-import Bot from "./Components/Bot";
+import ExpenseTracker from "./pages/ExpenseTracker";
+import Home from "./pages/Home";
 
 function App() {
   const [database, setDatabase] = useState([]);
@@ -30,13 +30,24 @@ function App() {
   };
 
   return (
-    <div id="app-container">
-      <div>
-        <Top balance={balance} income={income} expense={expense} />
-        <Mid database_log={database} />
-        <Bot update_database={appendData} />
-      </div>
-    </div>
+    <Context.Provider
+      value={{
+        contextData: {
+          balance: balance,
+          income: income,
+          expense: expense,
+          database_log: database,
+          update_database: appendData
+        }
+      }}
+    >
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/track" element={<ExpenseTracker />} />
+        </Routes>
+      </BrowserRouter>
+    </Context.Provider>
   );
 }
 

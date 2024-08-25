@@ -1,0 +1,12 @@
+#expense-tracker-container {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh 0 3vh 0;
+}
+
+#expense-tracker-container > div {
+  min-width: 20%;
+}
